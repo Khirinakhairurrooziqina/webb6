@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Ticket Booking</title>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Event Ticket Booking</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#events">Event List</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#order">Order Ticket</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#schedule">Event Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="how-to-order" class="p-5" style="background: linear-gradient(to right, #252729, #5c6061); position: relative; overflow: hidden;">
+
+        <div class="container">
+            <h2 class="display-4" style="color: white;">Welcome to Event Ticket Booking</h2>
+            <p class="lead" style="color: white;">Your one-stop platform for booking tickets to the hottest events in town!</p>
+
+   <div class="container mt-4">
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="characella.jpg" class="d-block w-100 img-fluid" alt="Concert Image" style="object-fit: cover;">
+      </div>
+      <div class="carousel-item">
+        <img src="festival teater.jpg" class="d-block w-100 img-fluid" alt="Fest Theater Image" style="object-fit: cover;">
+      </div>
+      <div class="carousel-item">
+        <img src="Korea.jpg" class="d-block w-100 img-fluid" alt="Concert Image" style="object-fit: cover;">
+      </div>
+      <div class="carousel-item">
+        <img src="music evennt.png" class="d-block w-100 img-fluid" alt="Concert Image" style="object-fit: cover;">
+      </div>
+      <div class="carousel-item">
+        <img src="mahalini.jpg" class="d-block w-100 img-fluid" alt="Concert Image" style="object-fit: cover;">
+      </div>
+      <div class="carousel-item">
+        <img src="marathon.jpg" class="d-block w-100 img-fluid" alt="Sport Image" style="object-fit: cover;">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" style="top: 50%; transform: translateY(-50%);">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next" style="top: 50%; transform: translateY(-50%);">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+      </div>
+        </div>
+    </section>
+
+ <!-- Event List Section -->
+ <section id="how-to-order" class="p-5" style="background: linear-gradient(to right, #252729, #5c6061); position: relative; overflow: hidden;">
+
+    <div class="container">
+        <h2 class="text-center" style="color: white;">Upcoming Events</h2>
+        <table class="table table-striped mt-4">
+            <thead class="table-dark">
+                <tr>
+                    <th style="color: white;">Event Name</th>
+                    <th style="color: white;">Location</th>
+                    <th style="color: white;">Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="color: white;">CHARACHELLA</td>
+                    <td style="color: white;">Rajawali, Makassar</td>
+                    <td style="color: white;">18<sup>Fri</sup> October 2024</td>
+                </tr>
+                <tr>
+                  <td style="color: white;">CAN MACHINES FALL IN LOVE</td>
+                  <td style="color: white;">Makassar</td>
+                  <td style="color: white;">18 <sup>Fri</sup> October 2024</td>
+                </tr>
+                <tr>
+                 <td style="color: white;">FESTIVAL TEATER MAHASISWA INDONESIA</td>
+                 <td style="color: white;">Makassar</td>
+                 <td style="color: white;">21-28<sup>Mon-Tue</sup> Oktober 2024</td>
+                 </tr>
+                <tr>
+                 <td style="color: white;">LIVE INDIE MUSIC EVENT</td>
+                 <td style="color: white;">GBK, Jakarta</td>
+                 <td style="color: white;">05<sup>Tue</sup> November 2024</td>
+                </tr>
+                <tr>
+                 <td style="color: white;">mahalini</td>
+                 <td style="color: white;">Four Points By Sheraton, Makassar</td>
+                 <td style="color: white;">12 <sup>Thu</sup> Desember 2024</td>
+              </tr>
+                <tr>
+                  <td style="color: white;">SULSEL HALF MARATHON</td>
+                  <td style="color: white;">Fort Rotterdam, Makassar</td>
+                  <td style="color: white;">15<sup>Sun</sup> Desember 2024</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!--how to order-->
+    <section id="how-to-order" class="p-5" style="background: linear-gradient(to right, #252729, #5c6061); position: relative; overflow: hidden;">
+        <!-- Corak background -->
+        <div class="background-pattern"></div>
+      
+        <div class="container position-relative" style="z-index: 1;">
+            <h2 class="text-center text-white mb-5 animate-fadein">Cara Memesan Tiket</h2>
+            <div class="row mt-4">
+                <!-- Langkah 1 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card rounded-3 shadow-lg border-0 h-100 hover-card bg-dark text-white animate-scroll" data-delay="0.1s">
+                        <div class="card-body text-center">
+                            <div class="icon mb-3 animate-floating">
+                                <i class="fas fa-calendar-alt fa-3x text-warning"></i>
+                            </div>
+                            <h5 class="card-title">1. Pilih Acara</h5>
+                            <p class="card-text">Telusuri daftar acara yang akan datang dan pilih yang ingin Anda hadiri.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Langkah 2 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card rounded-3 shadow-lg border-0 h-100 hover-card bg-dark text-white animate-scroll" data-delay="0.3s">
+                        <div class="card-body text-center">
+                            <div class="icon mb-3 animate-floating">
+                                <i class="fas fa-edit fa-3x text-info"></i>
+                            </div>
+                            <h5 class="card-title">2. Isi Formulir Pesanan</h5>
+                            <p class="card-text">Berikan nama, email, dan jumlah tiket yang ingin Anda beli.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Langkah 3 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card rounded-3 shadow-lg border-0 h-100 hover-card bg-dark text-white animate-scroll" data-delay="0.5s">
+                        <div class="card-body text-center">
+                            <div class="icon mb-3 animate-floating">
+                                <i class="fas fa-paper-plane fa-3x text-danger"></i>
+                            </div>
+                            <h5 class="card-title">3. Kirim Pesanan Anda</h5>
+                            <p class="card-text">Klik tombol "Kirim" untuk menyelesaikan pesanan Anda.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Langkah 4 -->
+                <div class="col-md-6 col-lg-4 mb-4 mx-auto">
+                    <div class="card rounded-3 shadow-lg border-0 h-100 hover-card bg-dark text-white animate-scroll" data-delay="0.7s">
+                        <div class="card-body text-center">
+                            <div class="icon mb-3 animate-floating">
+                                <i class="fas fa-envelope-open-text fa-3x text-success"></i>
+                            </div>
+                            <h5 class="card-title">4. Terima Konfirmasi</h5>
+                            <p class="card-text">Anda akan menerima email konfirmasi segera setelah pesanan Anda diproses.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Langkah 5 -->
+                <div class="col-md-6 col-lg-4 mb-4 mx-auto">
+                    <div class="card rounded-3 shadow-lg border-0 h-100 hover-card bg-dark text-white animate-scroll" data-delay="0.9s">
+                        <div class="card-body text-center">
+                            <div class="icon mb-3 animate-floating">
+                                <i class="fas fa-ticket-alt fa-3x text-primary"></i>
+                            </div>
+                            <h5 class="card-title">5. Nikmati Acara</h5>
+                            <p class="card-text">Tunjukkan tiket Anda di pintu masuk acara dan nikmati!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      
+      <!-- CSS tambahan untuk corak dan animasi -->
+      <style>
+        /* Corak background */
+        .background-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+            opacity: 0.1; /* Mengatur transparansi corak */
+            z-index: 0;
+        }
+      
+        /* Animasi Fade-In untuk judul */
+        .animate-fadein {
+            animation: fadeIn 2s ease-in-out;
+        }
+      
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+      
+        /* Animasi Scroll untuk Kartu */
+        .animate-scroll {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+      
+        /* Animasi Floating untuk ikon */
+        .animate-floating {
+            animation: floating 2s infinite ease-in-out;
+        }
+      
+        @keyframes floating {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+      
+        /* Munculkan animasi ketika elemen masuk dalam layar */
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+      
+        /* Efek Hover */
+        .hover-card {
+            transition: all 0.4s ease-in-out;
+        }
+        .hover-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+        }
+      </style>
+      
+      <!-- Script untuk scroll reveal -->
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const scrollElements = document.querySelectorAll(".animate-scroll");
+      
+            const elementInView = (el, percentageScroll = 100) => {
+                const elementTop = el.getBoundingClientRect().top;
+                return (
+                    elementTop <= 
+                    (window.innerHeight || document.documentElement.clientHeight) * (percentageScroll / 100)
+                );
+            };
+      
+            const displayScrollElement = (element) => {
+                element.classList.add('visible');
+            };
+      
+            const hideScrollElement = (element) => {
+                element.classList.remove('visible');
+            };
+      
+            const handleScrollAnimation = () => {
+                scrollElements.forEach((el) => {
+                    if (elementInView(el, 75)) {
+                        displayScrollElement(el);
+                    } else {
+                        hideScrollElement(el);
+                    }
+                });
+            };
+      
+            window.addEventListener('scroll', () => {
+                handleScrollAnimation();
+            });
+        });
+      </script>
+      
+      <!-- Link Font Awesome untuk ikon -->
+      <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- Order Ticket Section -->
+    <section id="order" class="p-5 bg-light" style="background: linear-gradient(to right, #252729, #5c6061); position: relative; overflow: hidden;" >
+        <div class="container">
+            <h2 class="text-center" style="color: white;">Order Your Tickets</h2>
+            <form id="orderForm" action="submit.php" method="post" class="mt-4">
+                <div class="mb-3">
+                    <label for="event" class="form-label">Pilih Tiket</label>
+                    <select id="event" name="event" class="form-control">
+                        <option value="" disabled selected>Silahkan memilih tiket yang anda ingin pesan</option>
+                        <option value="CHARACHELLA">CHARACHELLA</option>
+                        <option value="CAN MACHINES FALL IN LOVE">CAN MACHINES FALL IN LOVE</option>
+                        <option value="FESTIVAL TEATER MAHASISWA INDONESIA">FESTIVAL TEATER MAHASISWA INDONESIA</option>
+                        <option value="LIVE INDIE MUSIC EVENT">LIVE INDIE MUSIC EVENT</option>
+                        <option value="mahalini">mahalini</option>
+                        <option value="SULSEL HALF MARATHON">SULSEL HALF MARATHON</option>
+                    </select>
+                </div>                
+                <div class="mb-3">
+                    <label for="quantity" class="form-label" style="color: white;">Number of Tickets:</label>
+                    <input type="number" class="form-control" id="quantity" name="quantity">
+                </div>
+                <div class="mb-3">
+                    <label for="name" class="form-label" style="color: white;">Full Name:</label>
+                    <input type="text" class="form-control" id="name" name="name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label" style="color: white;">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+    
+ <!-- Bagian Tentang Kami -->
+ <section id="about" class="py-5" style="background: linear-gradient(to right, #252729, #5c6061); position: relative;">
+    <div class="background-pattern"></div>
+    <div class="container position-relative" style="z-index: 1;">
+        <h2 class="text-center mb-5 text-white animate-fadein">About Us</h2>
+        <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="team-member text-center">
+                        <img src="khaerul.jpg" class="rounded-circle mb-3 mx-auto d-block" alt="Khaerul Amri Syam" width="200" height="200">
+                        <h4 class="text-white">Khaerul Amri Syam</h4>
+                        <p class="text-light">Web Developer</p>
+                        <a href="https://khaerulamrisyam.github.io/tugas22/" class="btn btn-outline-light mt-2" target="_blank">See Profile</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="team-member text-center">
+                        <img src="jala;.jpg" class="rounded-circle mb-3 mx-auto d-block" alt="Jalaluddin Basir" width="200" height="200">
+                        <h4 class="text-white">Jalaluddin Basir</h4>
+                        
+                        <a href="https://15jalaluddinbasir.github.io/tugas-2/" class="btn btn-outline-light mt-2" target="_blank">See Profile</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="team-member text-center">
+                        <img src="fotoku.jpg" class="rounded-circle mb-3 mx-auto d-block" alt="Irfan Jamal P" width="200" height="200">
+                        <h4 class="text-white">Irfan Jamal P</h4>
+                        
+                        <a href="https://irfanjamalp.github.io/irfanJamalP/" class="btn btn-outline-light mt-2" target="_blank">See Profile</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="team-member text-center">
+                        <img src="khirina.jpg" class="rounded-circle mb-3 mx-auto d-block" alt="Khirina Khairur Rooziqina" width="200" height="200">
+                        <h4 class="text-white">Khirina Khairur Rooziqina</h4>
+                       
+                        <a href="https://khirinakhairurrooziqina.github.io/about-me/" class="btn btn-outline-light mt-2" target="_blank">See Profile</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="team-member text-center">
+                        <img src="algi.jpg" class="rounded-circle mb-3 mx-auto d-block" alt="Izulhak Algi F" width="200" height="200">
+                        <h4 class="text-white">Izulhak Algi F</h4>
+                        
+                        <a href="https://algifahrizal.github.io/about-us/" class="btn btn-outline-light mt-2" target="_blank">See Profile</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#teamCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#teamCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<style>
+    .background-pattern {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+        opacity: 0.1;
+        z-index: 0;
+    }
+
+    .animate-fadein {
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    .team-member {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .team-member img {
+        border: 4px solid #fff;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .team-member:hover img {
+        transform: scale(1.05);
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 5%;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        padding: 20px;
+    }
+</style>
+    <!-- Footer -->
+    <footer class="p-3 bg-dark text-white text-center">
+        <p>&copy; 2024 Event Ticket Booking</p>
+    </footer>
+
+    <!-- Link Bootstrap JS and Popper.js -->
+        <!-- Link Bootstrap JS and Popper.js -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    
+        <!-- Custom JavaScript -->
+        <script>
+            // Form validation
+            document.getElementById('orderForm').addEventListener('submit', function(event) {
+                var eventInput = document.getElementById('event').value;
+                var quantityInput = document.getElementById('quantity').value;
+                var nameInput = document.getElementById('name').value;
+                var emailInput = document.getElementById('email').value;
+    
+                if (eventInput === '' || quantityInput === '' || nameInput === '' || emailInput === '') {
+                    event.preventDefault();
+                    alert('All fields must be filled out');
+                } else if (quantityInput <= 0) {
+                    event.preventDefault();
+                    alert('Please enter a valid ticket quantity');
+                }
+            });
+    
+            // Smooth scroll for navigation links
+            document.querySelectorAll('.nav-link').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    window.scrollTo({
+                        top: targetSection.offsetTop,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+    
+            // Carousel autoplay
+            var myCarousel = document.querySelector('#carouselExample');
+            var carousel = new bootstrap.Carousel(myCarousel, {
+                interval: 3000,
+                ride: 'carousel'
+            });
+        </script>
+        <script>
+          // Form validation and submission with localStorage
+          document.getElementById('orderForm').addEventListener('submit', function(event) {
+              event.preventDefault(); // Prevent the form from submitting the traditional way
+      
+              var eventInput = document.getElementById('event').value;
+              var quantityInput = document.getElementById('quantity').value;
+              var nameInput = document.getElementById('name').value;
+              var emailInput = document.getElementById('email').value;
+      
+              // Validation
+              if (eventInput === '' || quantityInput === '' || nameInput === '' || emailInput === '') {
+                  alert('All fields must be filled out');
+              } else if (quantityInput <= 0) {
+                  alert('Please enter a valid ticket quantity');
+              } else {
+                  // Store data in localStorage
+                  localStorage.setItem('event', eventInput);
+                  localStorage.setItem('quantity', quantityInput);
+                  localStorage.setItem('name', nameInput);
+                  localStorage.setItem('email', emailInput);
+      
+                  // Redirect to the submit.html page
+                  window.location.href = 'submit.html';
+              }
+          });
+      </script>
+    </body>
+    </html>m

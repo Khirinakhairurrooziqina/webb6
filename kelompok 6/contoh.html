@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Ticket Booking</title>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Event Ticket Booking</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#events">Event List</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#order">Order Ticket</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#schedule">How to order</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="p-5 text-center bg-light">
+        <div class="container">
+            <h2 class="display-4">Welcome to Event Ticket Booking</h2>
+            <p class="lead">Your one-stop platform for booking tickets to the hottest events in town!</p>
+
+            <!-- Carousel -->
+            <div class="container mt-4">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="characella.jpg" class="d-block w-100 img-fluid" style="height: 65vh; object-fit: cover;" alt="Concert Image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Korea.jpg" class="d-block w-100 img-fluid" style="height: 65vh; object-fit: cover;" alt="Korea Event">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="festival teater.jpg" class="d-block w-100 img-fluid" style="height: 65vh; object-fit: cover;" alt="Music Event">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="music event.png" class="d-block w-100 img-fluid" style="height: 65vh; object-fit: cover;" alt="Music Event">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="mahalini.jpg" class="d-block w-100 img-fluid" style="height: 65vh; object-fit: cover;" alt="Music Event">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="marathon.jpg" class="d-block w-100 img-fluid" style="height: 65vh; object-fit: cover;" alt="Music Event">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" style="top: 50%; transform: translateY(-50%);">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next" style="top: 50%; transform: translateY(-50%);">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event List Section -->
+    <section id="events" class="p-5 bg-white">
+        <div class="container">
+            <h2 class="text-center">Upcoming Events</h2>
+            <table class="table table-striped mt-4">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Event Name</th>
+                        <th>Location</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CHARACHELLA</td>
+                        <td>Rajawali, Makassar</td>
+                        <td>18<sup>Fri</sup> October 2024</td>
+                    </tr>
+                    <tr>
+                        <td>CAN MACHINES FALL IN LOVE</td>
+                        <td>Makassar</td>
+                        <td>18 <sup>Fri</sup> October 2024</td>
+                    </tr>
+                    <tr>
+                        <td>FESTIVAL TEATER MAHASISWA INDONESIA</td>
+                        <td>Makassar</td>
+                        <td>21-28<sup>Mon-Tue</sup> Oktober 2024</td>
+                    </tr>
+                    <tr>
+                        <td>LIVE INDIE MUSIC EVENT</td>
+                        <td>GBK, Jakarta</td>
+                        <td>05<sup>Tue</sup> November 2024</td>
+                    </tr>
+                    <tr>
+                        <td>mahalini</td>
+                        <td>Four Points By Sheraton, Makassar</td>
+                        <td>12 <sup>Thu</sup> Desember 2024</td>
+                    </tr>
+                    <tr>
+                        <td>SULSEL HALF MARATHON</td>
+                        <td>Fort Rotterdam, Makassar</td>
+                        <td>15<sup>Sun</sup> Desember 2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Order Ticket Section -->
+    <section id="order" class="p-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Order Your Tickets</h2>
+
+            <!-- Form that sends data to Google Forms -->
+            <form action="https://forms.gle/WZpmQSjwGCkQTxav8" method="POST" target="_blank">
+                <div class="mb-3">
+                    <label for="event" class="form-label">Event:</label>
+                    <input type="text" class="form-control" id="event" name="entry.1234567890">
+                </div>
+                <div class="mb-3">
+                    <label for="quantity" class="form-label">Number of Tickets:</label>
+                    <input type="number" class="form-control" id="quantity" name="entry.2345678901">
+                </div>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name:</label>
+                    <input type="text" class="form-control" id="name" name="entry.3456789012">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" name="entry.4567890123">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="p-5 bg-light">
+        <h2 class="text-center">About Us</h2><br>
+        <div class="container py-4">  
+            <div class="row d-flex justify-content-around text-center">
+                <div class="col-auto">
+                    <a href="https://khaerulamrisyam.github.io/tugas22/" class="btn btn-outline-primary">Khaerul Amri Syam</a>
+                </div>
+                <div class="col-auto">
+                    <a href="https://15jalaluddinbasir.github.io/tugas-2/" class="btn btn-outline-primary">Jalaluddin Basir</a>
+                </div>
+                <div class="col-auto">
+                    <a href="https://irfanjamalp.github.io/praktikum/" class="btn btn-outline-primary">Irfan Jamal P</a>
+                </div>
+                <div class="col-auto">
+                    <a href="https://khirinakhairurrooziqina.github.io/about-me/" class="btn btn-outline-primary">Khirina Khoirurroziqina</a>
+                </div>
+                <div class="col-auto">
+                    <a href="https://algifahrizal.github.io/about-us/" class="btn btn-outline-primary">Izulhak Algi</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-4">
+        <p>&copy; 2024 Event Ticket Booking. All rights reserved.</p>
+    </footer>
+
+    <!-- Link Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
